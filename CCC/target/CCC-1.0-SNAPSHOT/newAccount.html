@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Sign Up</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/newAccountCSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+    <!--Javascript-->
+    <script src="javascript/signUP.js" defer></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="init();return false;">
+<form id="account" onsubmit="signUp();return false;">
+    <div class="title">
+        <header>
+            <h1 style="font-family:Arial, Helvetica, sans-serif; text-align: center;"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 9">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            </svg> Sign Up Client </h1>
+        </header>
+    </div>
+
+    <br><br><br>
+    <div id="welcome">
+        <h2>Welcome to Credit Card Company. This is Client Sign up section</h2>
+    </div>
+
+    <!--Type of User-->
+    <div id="type">
+        <h2><label for="user">User: </label>
+            <select class="month" id="user" name="user" onclick="selectUser();return false;">
+                <option value="civilian" >civilian</option>
+                <option value="merchant" >merchant</option>
+                <option value="company" >company</option>
+                <option value="employee" >employee</option>
+            </select>
+        </h2>
+    </div>
+
+
+    <!--FullName-->
+    <div id="name">
+        <h2><label for="naming" id="change_names">Full Name: </label>
+            <input type="text" placeholder="Name" id="naming" name="name" required>
+        </h2>
+    </div>
+
+    <!--employee-->
+    <div id="Employee_name">
+        <h2><label for="employeeing">Employee Name: </label>
+            <input type="text" placeholder="Employee Name:" id="employeeing" name="employee" >
+        </h2>
+    </div>
+
+    <!--ceo-->
+    <div id="ceo">
+        <h2><label for="ceoing">CEO: </label>
+            <input type="text" placeholder="Ceo Name" id="ceoing" name="ceo" >
+        </h2>
+    </div>
+
+
+
+    <!--Credit Card-->
+    <div id="card_sec">
+        <div class="form-header">
+            <h4 class="title">Credit card detail</h4>
+        </div>
+
+        <div class="form-body">
+            <!-- Card Number -->
+            <input type="text" class="card-number" placeholder="Card Number" maxlength="16" minlength="16" pattern="[0-9]+" name="account_number" required> : Card Number
+
+            <!-- Date Field -->
+            <div class="date-field">
+                <div class="month">
+                    <select name="month" id="month">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                </div>
+                <div class="year">
+                    <select name="year">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select> : Exp Date
+                </div>
+            </div>
+
+            <!-- Card Verification Field -->
+            <div class="card-verification">
+                <div class="cvv-input">
+                    <input type="text" placeholder="CVV" maxlength="3" minlength="3" pattern="[0-9]{3}" required> : CVV
+                </div>
+                <div id="cards">
+                    <div class="visa"></div>
+                    <div class="mastercard"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Credit Limit
+    <div id="credit_limit">
+        <h2><label for="credit_limiting">Credit Limit: </label>
+            <input type="number" placeholder="Credit Limit" id="credit_limiting" name="credit_limit" step=".01">
+        </h2>
+    </div>-->
+
+    <div class="aftermath">
+        <br>
+        <div id="clicker">
+            <input type="checkbox" id="scales" required>
+            <h2>By clicking you agree to our <a href="#">Terms & Privacy</a>.</h2>
+        </div>
+
+
+        <div id="buttoning">
+            <br>
+            <button class="registerbtn" type="submit">Sign Up</button>
+        </div>
+
+
+        <br>
+        <div id="container-signin">
+            <h2>Already have an account? <a href="signIn.html">Sign in</a>.</h2>
+        </div>
+    </div>
+</form>
+</body>
+</html>

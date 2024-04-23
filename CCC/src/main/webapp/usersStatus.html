@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <!--
+        To change this license header, choose License Headers in Project Properties.
+        To change this template file, choose Tools | Templates
+        and open the template in the editor.
+    -->
+<html>
+    <head>
+        <title>Users Status</title>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/OptionsCSS.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+        
+        <!-- Javascript -->
+        <script src="javascript/signIN.js" defer></script>
+        <script src="javascript/usersStatus.js" defer></script>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!-- User Status Message -->
+        <div class="title">
+                <header>
+                    <h1 style="font-family:Arial, Helvetica, sans-serif; text-align: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 9">
+                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                        Users Status
+                    </h1>
+                </header>
+        </div>
+        
+        <br><br><br>
+        
+        <!-- Welocome Message -->
+        <div id="welcome-msg">
+            <h2>Welcome to CCC Users Status Page</h2>
+        </div>
+        
+        <!-- Account Status -->
+        <div id="profile_status">
+            <div id="logo_prof"></div>
+            <div id="name_prof"></div>
+            <div id="status_prof">
+                <ul>
+                    <div id="limit"><li></li></div>
+                    <div id="owed"><li></li></div>
+                    <div id="balance"><li></li></div>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Back Button -->
+        <div id="back">
+            <button id="but_back" onclick="back();return false;">BACK</button>
+        </div>
+        
+        <!-- State_1 -->
+        <div id="state1">
+            <h2>Issuance of users without debt to the company</h2>
+            <button id="get-s1-res-btn">Get Issuance</button>
+            <div class="s1-modal-container" id="s1_modal_container">
+                <div class="s1-modal">
+                    <h2>No debt is pending from the following users:</h2>
+                    <p></p>
+                    <button id="s1-close-res-btn">Close</button>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br>
+        
+        <!-- State_2 -->
+        <div id="state2">
+            <h2>Issuance of users with debt to the company</h2>
+            <button id="get-s2-res-btn">Get Issuance</button>
+            <div class="s2-modal-container" id="s2_modal_container">
+                <div class="s2-modal">
+                    <h2>Debt is pending from the following users:</h2>
+                    <p></p>
+                    <button id="s2-close-res-btn">Close</button>
+                </div>
+            </div>
+        </div>
+  
+    </body>
+    <footer>
+        <p>© 2021 All rights reserved.</p>
+    </footer>
+</html>

@@ -1,0 +1,299 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-image: url('../assets/back.jpg');
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Caladea,
+    sans-serif;
+    margin: 0 auto;
+    width: 600px;
+    background-color: #e7e7e7;
+}
+
+/*sign up*/
+
+#welcome{
+    background-color: #c3af72;
+    width: 720px;
+    border: 2px solid #93a4a7;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    padding-left: 5px;
+}
+
+/*Full Name*/
+    #name{
+        margin-left: 20px;
+    }
+    #naming{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:16px;
+    }
+
+    #Employee_name{
+        margin-left: 20px;
+    }
+    #employeeing{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:16px;
+    }
+
+    #ceo{
+        margin-left: 20px;
+    }
+    #ceoing{
+        width: 300px;
+        height: 30px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:16px;
+    }
+
+/*card section*/
+    #card_sec{
+        margin-left: 20px;
+        border: 1px solid #5e6977;
+        background-color: #b9cbc5;
+        width: 600px;
+        height: 250px;
+    }
+
+    /* Credit Card */
+    .credit-card {
+        width: 360px;
+        height: 400px;
+        margin: 60px auto 0;
+        border-radius: 6px;
+        box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    }
+
+    .form-header {
+        height: 60px;
+        padding: 20px 30px 0;
+        border-bottom: 1px solid #e1e8ee;
+    }
+
+    .form-body {
+
+        height: 340px;
+        padding: 30px 30px 20px;
+    }
+
+    /* Title */
+    .title {
+        font-size: 18px;
+        margin: 0;
+        color: #3d434a;
+    }
+
+    /* Common */
+    .card-number,
+    .cvv-input input,
+    .month select,
+    .year select {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 14px;
+    }
+
+    .card-number,
+    .month select,
+    .year select {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 14px;
+    }
+
+    .card-number,
+    .cvv-details,
+    .cvv-input input,
+    .month select,
+    .year select {
+        opacity: .7;
+        color: #1a1010;
+    }
+
+    .card-number {
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+    }
+
+    /* Date Field */
+    .month select,
+    .year select {
+        width: 145px;
+        height: 30px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    .month select {
+        float: left;
+    }
+
+
+    /* Card Verification Field */
+    .cvv-input input {
+        float: left;
+        width: 145px;
+        height: 30px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        background: #fff;
+    }
+
+    #cards{
+        margin-top: -20px;
+    }
+
+    .visa{
+        float: right;
+        width:70px; /*width of your image*/
+        height:30px; /*height of your image*/
+        content:url(../assets/visa.png);
+        margin-top:5px; /* If you want no margin */
+        padding:0; /*if your want to padding */
+    }
+
+    .mastercard{
+        float: right;
+        width:70px; /*width of your image*/
+        height:40px; /*height of your image*/
+        content:url(../assets/mastercard.png);
+        margin-bottom: 30px; /* If you want no margin */
+        padding:0; /*if your want to padding */
+    }
+
+/*type*/
+    #type{
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    #type select{
+        font-size:16px;
+        width: 145px;
+        height: 30px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+/*register button*/
+    .aftermath{
+        border: 2px solid #93a4a7;
+        margin-left: 20px;
+        margin-top:160px;
+        background-color: #b9cbc5;;
+        width: 600px;
+        height: 300px;
+    }
+
+    input[type='checkbox'] {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+        0 2px 2px rgba(0,0,0,0.12),
+        0 4px 4px rgba(0,0,0,0.12),
+        0 8px 8px rgba(0,0,0,0.12),
+        0 16px 16px rgba(0,0,0,0.12);
+        width:20px;
+        height:20px;
+        background:white;
+        border-radius:5px;
+        border:2px solid #555;
+    }
+    input[type='checkbox']:checked {
+        background: #abd;
+    }
+
+    #clicker{
+        text-align: center;
+    }
+
+    #buttoning{
+        text-align: center;
+    }
+
+    #container-signin{
+        text-align: center;
+        padding-bottom: 1%;
+    }
+
+    .registerbtn {
+        border:2px solid #555;
+        background-color: #c3af72;
+        font-size: 18px;
+        color: black;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 150px;
+        opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+        transition: 1s;
+        opacity: 1;
+    }
+
+/*sign in*/
+#welcome2{
+    text-align: center;
+    background-color: #c3af72;
+    width: 620px;
+    border: 2px solid #93a4a7;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    padding-left: 5px;
+}
+
+
+/*main page*/
+#welcome3{
+    background-color: #c3af72;
+    width: 600px;
+    border: 2px solid #93a4a7;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    padding-left: 5px;
+}
+
+#message{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}

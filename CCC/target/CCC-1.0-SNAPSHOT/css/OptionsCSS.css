@@ -1,0 +1,471 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-image: url('../assets/back.jpg');
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Caladea,
+    sans-serif;
+    margin: 0 auto;
+    width: 600px;
+    background-color: #e7e7e7;
+}
+
+#back {
+    position:absolute;
+    top: 0;
+    margin-top: 50px;
+    left:0;
+    margin-left: 50px;
+}
+
+#but_back{
+    background-color: #d46f6f;
+    cursor:pointer;
+    border: 2px solid black;
+    border-radius: 40px;
+    width:120px;
+    height:70px;
+    color: #000000;
+    font-size: 20px;
+}
+
+
+/*status prof*/
+#profile_status{
+    position:absolute;
+    top: 0;
+    margin-top: 50px;
+    right:0;
+    margin-right: 50px;
+    border: 2px solid #555555;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: #b4c372;
+}
+
+#logo_prof{
+    width:65px; /*width of your image*/
+    height:60px; /*height of your image*/
+    border-radius: 50px;
+    content:url(../assets/profile.png);
+    padding:0; /*if your want to padding */
+}
+
+#name_prof{
+    font-family: "DejaVu Serif Condensed";
+    margin-top: -46px;
+    margin-left: 68px;
+    font-size: 23px;
+    color: #3c1c1c;
+}
+
+#status_prof{
+    font-family: "DejaVu Serif Condensed";
+    margin-top: 20px;
+    margin-left: -15px;
+    font-size: 23px;
+    color: #35393e;
+}
+
+input:invalid {
+    border: 1px  solid red;
+}
+
+#welcome2{
+    text-align: center;
+    background-color: #c3af72;
+    width: 620px;
+    border: 2px solid #93a4a7;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    padding-left: 5px;
+}
+
+#options{
+    text-align: center;
+}
+
+.label{
+    font-weight: normal;
+    font-size: 21px;
+    font-style: oblique;
+}
+
+.button_opt {
+    border:2px solid #555;
+    font-size: 18px;
+    color: #000000;
+    padding: 16px 20px;
+    margin-left: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+}
+
+.button_opt,#dell{
+    background-color: #ac3f3f;
+}
+
+.button_opt,#pur{
+    background-color: #2abec3;
+}
+
+.button_opt,#ret{
+    background-color: #468652;
+}
+
+.button_opt,#pay{
+    background-color: #aca936;
+}
+
+.button_opt,#que{
+    background-color: #8158b3;
+}
+
+.button_opt:hover {
+    transition: 1s;
+    opacity: 2;
+}
+
+.relative {
+    position: relative;
+    margin-top: 50px;
+}
+
+.navitem {
+    display: inline-block;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    border:2px solid #555;
+    border-radius: 10px;
+    background-color: #c3765e;
+    opacity: 0.9;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navitem:hover {
+    transition: 1s;
+    opacity: 2;
+}
+
+/*delete page*/
+#welcome3 {
+    background-color: #c3af72;
+    width: 520px;
+    border: 2px solid #93a4a7;
+    border-radius: 20px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+#yes {
+    width: 100px;
+    background-color: #6ec653;
+}
+
+#no {
+    width: 100px;
+    background-color: #d9162c;
+}
+
+/*purchase*/
+    #welcome3 {
+        background-color: #c3af72;
+        width: 550px;
+        border: 2px solid #93a4a7;
+        border-radius: 20px;
+        margin-bottom: 70px;
+        margin-left: 40px;
+        padding-left: 5px;
+    }
+
+    /*Item*/
+    #item {
+        margin-left: 20px;
+    }
+    
+    #iteming {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+    
+    /*transaction_type*/
+    #trans_type {
+        margin-right: 20px;
+    }
+
+    #trans_typing {
+        font-size:16px;
+        width: 145px;
+        height: 30px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+
+    /*Cost*/
+    #cost {
+        margin-right: 20px;
+    }
+    
+    #costing {
+        width: 250px;
+        height: 40px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:18px;
+    }
+
+    /*Quantity*/
+    #date {
+        margin-right: 130px;
+    }
+    
+    #dating {
+        height: 35px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+
+    /*Merchant*/
+    #merch {
+        margin-left: 20px;
+    }
+    
+    #merching {
+        width: 250px;
+        height: 32px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+
+/*questions*/
+    #froming {
+        width: 250px;
+        height: 32px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+
+    #toing {
+        width: 250px;
+        height: 32px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+
+    #options2{
+        text-align: center;
+    }
+
+    #options3{
+        text-align: center;
+    }
+    
+    .names{
+        width: 250px;
+        height: 32px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+        border: 2px solid #93a4a7;
+        border-radius: 6px;
+        font-size:17px;
+    }
+
+    #all_employees{
+        background-color: #b9cbc5;
+    }
+
+    #specific{
+        background-color: #5972d4;
+    }
+
+/*Users Status*/
+    #welcome-msg {
+        background-color: #c3af72;
+        width: 520px;
+        border: 2px solid #93a4a7;
+        border-radius: 20px;
+        margin-bottom: 70px;
+        margin-left: 40px;
+        padding-left: 5px;
+        text-align: center;
+    }
+    
+    #state1, #state2 {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    #get-s1-res-btn, #get-s2-res-btn {
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgb(144, 161, 69);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    #s1-close-res-btn, #s2-close-res-btn {
+        color: white;
+        font-size: 13px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgb(212, 111, 111);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .s1-modal-container, .s2-modal-container {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        pointer-events: none;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+        background-color: rgba(191, 191, 191, 0.5);
+    }
+    
+    .s1-modal-container.show, .s2-modal-container.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .s1-modal, .s2-modal {
+        height: 40%;
+        max-width: 40%;
+        border-radius: 2em;
+        padding: 15px 25px;
+        text-align: center;
+        background-color: rgb(230, 230, 230);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .s1-modal p, .s2-modal p {
+        opacity: 0.7;
+        font-size: 17px;
+    }
+    
+/*Trader of the month*/
+
+    .trader-info, .trader-options, #trader-result {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .trader-info p {
+        font-size: 18px;
+        font-style: italic;       
+    }
+    
+    .trader-options select {
+        height: 4em;
+        width: 6em;
+        text-align: center;
+    }
+    
+    #get-trader-btn {
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgb(144, 161, 69);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    #close-trader-btn {
+        color: white;
+        font-size: 13px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        background-color: rgb(212, 111, 111);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .trader-modal-container {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        pointer-events: none;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+        background-color: rgba(191, 191, 191, 0.5);
+    }
+    
+    .trader-modal-container.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .trader-modal {
+        height: 40%;
+        max-width: 40%;
+        border-radius: 2em;
+        padding: 15px 25px;
+        text-align: center;
+        background-color: rgb(230, 230, 230);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .trader-modal p {
+        opacity: 0.7;
+        font-size: 25px;
+    }
+    
+/*Global footer*/
+    footer {
+        margin-top: 150px;
+        color: dimgray;
+        font-size: 20px;
+        text-align: center;
+    }

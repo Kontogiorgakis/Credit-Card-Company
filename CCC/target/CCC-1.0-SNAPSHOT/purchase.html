@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Purchase</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/OptionsCSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+    <!--Javascript-->
+    <script src="javascript/signIN.js" defer></script>
+    <script src="javascript/Purchase.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form id="purchase" onsubmit="checkAndPurchase(); return false;">
+    <div class="title">
+        <header>
+            <h1 style="font-family:Arial, Helvetica, sans-serif; text-align: center;"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 9">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            </svg> Purchase </h1>
+        </header>
+    </div>
+
+    <br><br><br>
+    <div id="welcome3">
+        <h2>Welcome to Credit Card Company Purchase Page</h2>
+    </div>
+
+    <!--Status-->
+    <div id="profile_status">
+        <div id="logo_prof"></div>
+        <div id="name_prof"></div>
+        <div id="status_prof">
+            <ul>
+                <div id="limit"></div>
+                <div id="owed"></div>
+                <div id="balance"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="back">
+        <button id="but_back" onclick="back();return false;">BACK</button>
+    </div>
+
+    <div id="options">
+        <h2>Item</h2>
+        <!--Item-->
+        <div id="item">
+            <h2><label for="iteming">Name: </label>
+                <input type="text" placeholder="Name" id="iteming" name="item" value="default" required>
+            </h2>
+        </div>
+
+        <!--transaction_type-->
+        <div id="trans_type">
+            <h2><label for="trans_typing">Transaction type: </label>
+                <select id="trans_typing" name="transaction_type" >
+                    <option value="credit">credit</option>
+                    <option value="charge">charge</option>
+                </select>
+            </h2>
+        </div>
+
+
+        <!--Cost-->
+        <div id="cost">
+            <h2><label for="costing">Cost: </label>
+                <input type="number" placeholder="Cost" id="costing" name="cost"step="0.1" pattern="[0-9]+" required> $
+            </h2>
+        </div>
+
+        <!--Date-->
+        <div id="date">
+            <h2><label for="dating">Date: </label>
+                <input type="date"  id="dating" name="date" value="2021-31-12" required>
+            </h2>
+        </div>
+
+        <!--Merchant-->
+        <div id="merch">
+            <h2><label for="merching">Merchant: </label>
+                <input type="text" placeholder="Merchant" id="merching" name="merchant" required>
+            </h2>
+        </div>
+
+        <div class="relative">
+            <button class="button_opt" id="pur" style="margin-top: 30px" type="submit">Purchase</button>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>© 2021 All rights reserved.</p>
+    </footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Sign In</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/newAccountCSS.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+    <!--Javascript-->
+    <script src="javascript/signIN.js" defer></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="init();return false;">
+<div id="signIn">
+    <div class="title">
+        <header>
+            <h1 style="font-family:Arial, Helvetica, sans-serif; text-align: center;"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 9">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+            </svg> Sign In</h1>
+        </header>
+    </div>
+
+    <br><br><br>
+    <div id="welcome2">
+        <h2>Welcome to Credit Card Company</h2>
+    </div>
+
+
+    <!--Type of User-->
+    <div id="type">
+        <h2><label for="user">User: </label>
+            <select class="month" id="user" name="user" >
+                <option value="civilian">civilian</option>
+                <option value="merchant">merchant</option>
+                <option value="company">company</option>
+                <option value="employee">employee</option>
+            </select>
+        </h2>
+    </div>
+
+
+    <!--FullName-->
+    <div id="name">
+        <h2><label for="naming">Full Name: </label>
+            <input type="text" placeholder="Full Name" id="naming" name="naming">
+        </h2>
+    </div>
+
+    <!--Sign In-->
+    <div id="buttoning">
+        <br>
+        <button class="registerbtn" onclick="signin(); return false;">Sign In</button>
+    </div>
+
+    <!-- Sign Up -->
+    <br>
+    <div id="container-signin">
+        <h2>Don't have an account yet? <a href="newAccount.html">Sign up</a>.</h2>
+    </div>
+
+
+
+</div>
+</body>
+</html>

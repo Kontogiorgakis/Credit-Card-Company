@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <!--
+        Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+        Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+    -->
+<html>
+    <head>
+        <title>Main Page</title>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/OptionsCSS.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+        <!--Javascript-->
+        <script src="javascript/signIN.js" defer></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="account">
+
+            <!-- Options Message -->
+            <div class="title">
+                <header>
+                    <h1 style="font-family:Arial, Helvetica, sans-serif; text-align: center;"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 9">
+                        <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                    </svg> Main Page </h1>
+                </header>
+            </div>
+
+            <br><br><br>
+
+            <!-- Welcome Message -->
+            <div id="welcome2">
+                <h2>Welcome to Credit Card Company</h2>               
+            </div>
+
+            <!-- Account Status -->
+            <div id="profile_status">
+                <div id="logo_prof"></div>
+                <div id="name_prof"></div>
+                <div id="status_prof">
+                    <ul>
+                        <div id="limit"><li></li></div>
+                        <div id="owed"><li></li></div>
+                        <div id="balance"><li></li></div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <div id="back">
+                <button id="but_back" onclick="logout(); return false;">LOGOUT</button>
+            </div>
+
+            <!-- Options Menu -->
+            <div id="options">
+               
+                <!--Purchase-->
+                <div class="label"><h2>Purchase</h2></div>
+                <button class="button_opt" id="pur" onclick="purchase_page();return false;">Purchase</button>
+
+                <!--Return-->
+                <div class="label"><h2>Return dealings</h2></div>
+                <button class="button_opt" id="ret" onclick="return_page();return false;">Return</button>
+
+                <!--Payment-->
+                <div class="label"><h2>Payment</h2></div>
+                <button class="button_opt" id="pay" onclick="payment_page();return false;">Payment</button>
+
+                <!--Questions-->
+                <div class="label"><h2>Questions</h2></div>
+                <button class="button_opt" id="que" onclick="questions_page();return false;">?</button>
+                
+                 <!--Delete-->
+                <div class="label"><h2>Delete account</h2></div>
+                <button class="button_opt" id="dell" onclick="delete_page();return false;">Delete</button>
+
+                <!--Status & Trader Of Month-->
+                <div class="relative">
+                    <div class="label"><h2>Status</h2></div>
+                    <button class="navitem" onclick="usersStatus_page();return false;">Good/Bad Status</button>
+                    <button class="navitem" onclick="traderOfMonth_page();return false;">Trader of the month</button>
+                </div>
+            </div>
+
+            <footer>
+                <p>© 2021 All rights reserved.</p>
+            </footer>
+        </form>
+    </body>
+</html>

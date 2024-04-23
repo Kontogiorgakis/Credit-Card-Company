@@ -1,0 +1,37 @@
+
+# SQL COMMANDS FOR TABLE CREATION
+
+#1 CIVILIAN TABLE
+CREATE TABLE civilians (civilian_id INTEGER not NULL AUTO_INCREMENT, name VARCHAR(30) not null, account_number VARCHAR(20) not null unique,
+	exp_date VARCHAR(20) not null, credit_limit INTEGER, amount_due DOUBLE, available_balance DOUBLE, PRIMARY KEY (civilian_id))
+
+#2 COMPANY TABLE
+CREATE TABLE companies (company_id INTEGER not NULL AUTO_INCREMENT, name VARCHAR(30) not null, account_number VARCHAR(20) not null unique,
+	exp_date VARCHAR(20) not null, credit_limit INTEGER, amount_due DOUBLE, available_balance DOUBLE, employee_name VARCHAR(40) not null,
+	employee_identity VARCHAR(30) not null, PRIMARY KEY (company_id))
+
+#3 EMPLOYEE TABLE
+CREATE TABLE employees (employee_id INTEGER not NULL AUTO_INCREMENT, name VARCHAR(30) not null, account_number VARCHAR(20) not null,
+	exp_date VARCHAR(20) not null, credit_limit INTEGER, amount_due DOUBLE, available_balance DOUBLE, company VARCHAR(20) not null, PRIMARY KEY (employee_id))
+
+#4 MERCHANT TABLE
+CREATE TABLE merchants (merchant_id INTEGER not NULL AUTO_INCREMENT, name VARCHAR(30) not null, account_number VARCHAR(20) not null unique,
+	supply DOUBLE, total_profit DOUBLE, amount_due DOUBLE, PRIMARY KEY (merchant_id))
+
+# SQL COMMANDS FOR EACH TABLE INSERTION 
+
+#1 INSERT CIVILIAN EXAMPLE
+INSERT INTO civilians (name, account_number, exp_date, credit_limit, amount_due, available_balance)
+	VALUES (Giorgos, 1111111111111111, 2022-10-10, 1000, 700, 3000)
+
+#2 INSERT COMPANY EXAMPLE
+INSERT INTO companies (name, account_number, exp_date, credit_limit, amount_due, available_balance, employee_name, employee_identity)
+	VALUES (Microsoft, 1211111111111111, 2022-10-1, 10000, 7000, 30000, NULL, NULL)
+
+#3 INSERT EMPLOYEE EXAMPLE
+INSERT INTO employees (name, account_number, exp_date, credit_limit, amount_due, available_balance, company)
+	VALUES (Maria, 1211111111111222, 2022-10-1, 1000, 700, 3000, Microsoft)
+
+#4 INSERT MERCHANT EXAMPLE
+INSERT INTO merchants (name, account_number, supply, total_profit, amount_due)
+	VALUES (Ioanna, 1234111111111119, 200, 500, 0)
